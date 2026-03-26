@@ -7,3 +7,5 @@ Given Input: data = [1, 2, 2, 3, 4, 4, 4, 5]
 Expected Output: Unique List: [1, 2, 3, 4, 5]
 '''
 data = [1, 2, 2, 3, 4, 4, 4, 5]
+unique_list = list(set(data))
+print(f'Unique List: {data}')
