@@ -1,3 +1,4 @@
+from pprint import pprint
 def make_square(n):
     square = n ** 2
     return square
@@ -60,3 +61,9 @@ def create_groups(team, *args):
         print(member)
 
 create_groups('Team One', 'Jake', 'Paul', 'Logan', 'Macaster')
+
+def sample_fun(**kwargs): #converts arguments into dictionary
+    for key in kwargs:
+        print(key, kwargs[key])
+
+sample_fun(first_name='Amanuel', last_name='Tesfaye', age = 18, country = 'U.S', skills = {'HTML', 'CSS', 'Python', 'Java'})
