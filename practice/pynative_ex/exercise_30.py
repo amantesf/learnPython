@@ -1,0 +1,20 @@
+'''Exercise 30. Word count Counter (The Histogram)
+Practice Problem: Write a program that counts how many times each word appears in a given paragraph and stores these counts in a dictionary.
+
+Exercise Purpose: This is a classic “Natural Language Processing” (NLP) task. It teaches you how to map data to occurrences, which is the logic used by search engines to index web pages or by social media platforms to identify trending hashtags.
+
+Given Input: text = "apple banana apple cherry banana apple"
+
+Expected Output: {'apple': 3, 'banana': 2, 'cherry': 1}
+'''
+text = "apple banana apple cherry banana apple"
+words = text.split()
+count = {}
+
+for word in words:
+    if word in count:
+        count[word] += 1
+    else:
+        count[word] = 1
+
+print(count)
